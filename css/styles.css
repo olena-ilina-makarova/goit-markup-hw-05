@@ -392,6 +392,7 @@ a:hover {
 
 .team-soc-icon {
   fill: currentColor;
+  cursor: pointer;
 }
 
 .team-soc-link:is(:hover, :focus) {
@@ -415,6 +416,7 @@ a:hover {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
+
 .customers-link {
   width: 100%;
   height: 100%;
@@ -424,6 +426,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
+  cursor: pointer;
 }
 .customers-icon {
   fill: currentColor;
@@ -431,6 +434,7 @@ a:hover {
       cubic-bezier(0.4, 0, 0.2, 1),
     var(--transition-property) var(--transition-duration)
       cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .customers-link:is(:hover, :focus) {
@@ -495,6 +499,7 @@ button:focus {
 .picture-item-link {
   display: inline-block;
   text-decoration: none;
+  transition: box-shadow var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .picture-item-link:is(:hover, :focus) {
@@ -517,6 +522,7 @@ button:focus {
   overflow: auto;
 
   display: inline-block;
+  transition-duration: var(--transition-duration);
 }
 
 .portfolio-top-wrap {
@@ -547,10 +553,6 @@ button:focus {
   border-top: none;
   padding: 32px 16px;
 }
-
-/* .portfolio-top-text { 
-  display: inline-block;
-}*/
 
 /* Footer */
 
@@ -619,6 +621,10 @@ button:focus {
   background-color: #31d0aa;
 }
 
+.footer-icon {
+  cursor: pointer;
+}
+
 .soc-footer-subtitle {
   justify-content: center;
   font-weight: 500;
@@ -670,4 +676,5 @@ button:focus {
   display: block;
   margin-left: auto;
   text-align: center;
+  cursor: pointer;
 }
